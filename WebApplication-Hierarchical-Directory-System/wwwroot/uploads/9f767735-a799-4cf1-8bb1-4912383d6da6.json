@@ -1,0 +1,118 @@
+[
+  {
+    "$id": "1",
+    "Id": 0,
+    "Title": "root",
+    "Parent": null,
+    "ParentId": null,
+    "Childrens": [
+      {
+        "$id": "2",
+        "Id": 0,
+        "Title": "Level 1.1",
+        "Parent": {
+          "$ref": "1"
+        },
+        "ParentId": null,
+        "Childrens": [
+          {
+            "$id": "3",
+            "Id": 0,
+            "Title": "Level 1.1.1",
+            "Parent": {
+              "$ref": "2"
+            },
+            "ParentId": null,
+            "Childrens": []
+          },
+          {
+            "$id": "4",
+            "Id": 0,
+            "Title": "Level 1.1.2",
+            "Parent": {
+              "$ref": "2"
+            },
+            "ParentId": null,
+            "Childrens": []
+          }
+        ]
+      },
+      {
+        "$id": "5",
+        "Id": 0,
+        "Title": "Level 1.2",
+        "Parent": {
+          "$ref": "1"
+        },
+        "ParentId": null,
+        "Childrens": [
+          {
+            "$id": "6",
+            "Id": 0,
+            "Title": "Level 1.2.1",
+            "Parent": {
+              "$ref": "5"
+            },
+            "ParentId": null,
+            "Childrens": [
+              {
+                "$id": "7",
+                "Id": 0,
+                "Title": "Level 1.2.1.1",
+                "Parent": {
+                  "$ref": "6"
+                },
+                "ParentId": null,
+                "Childrens": []
+              },
+              {
+                "$id": "8",
+                "Id": 0,
+                "Title": "Level 1.2.1.2",
+                "Parent": {
+                  "$ref": "6"
+                },
+                "ParentId": null,
+                "Childrens": []
+              }
+            ]
+          },
+          {
+            "$id": "9",
+            "Id": 0,
+            "Title": "Level 1.2.2",
+            "Parent": {
+              "$ref": "5"
+            },
+            "ParentId": null,
+            "Childrens": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$ref": "2"
+  },
+  {
+    "$ref": "5"
+  },
+  {
+    "$ref": "3"
+  },
+  {
+    "$ref": "4"
+  },
+  {
+    "$ref": "6"
+  },
+  {
+    "$ref": "9"
+  },
+  {
+    "$ref": "7"
+  },
+  {
+    "$ref": "8"
+  }
+]

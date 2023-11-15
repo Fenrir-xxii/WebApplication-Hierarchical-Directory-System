@@ -12,12 +12,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"]</title>
+    <style>
+        body{
+            font-size: 24px;
+        }
 
+        .margin-top{
+            margin-top: 50px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <div>
-        "Directory" - @Model.Title
+        <h3>"Directory" - @Model.Title</h3>
     </div>
     <ul>
         @foreach (var subfolder in Model.Childrens)
@@ -32,17 +41,15 @@
             <button type="submit">Go Back</button>
         </form>
     </div>
+    <div class="margin-top">
+        Select file (.json):
+        <form method="post" enctype="multipart/form-data" action="/loadDirectoryTree">
+            <INPUT id="file" type="file" name="file" accept=".json">
 
-    <form method="post" enctype="multipart/form-data" action="/loadDirectoryTree">
-        File:
-        <INPUT id="file" type="file" name="file">
-		
-		<button type="submit" class="btn btn-success">Load</button>
-	</form>
-    <div>
-        @* <a href="/saveToFile">save json</a> *@
-        @* <a href="/loadFile">load json</a> *@
+            <button type="submit" class="btn btn-success">Load</button>
+        </form>
     </div>
+
 
 </body>
 
