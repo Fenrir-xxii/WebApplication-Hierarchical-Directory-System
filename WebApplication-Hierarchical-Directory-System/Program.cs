@@ -1,11 +1,13 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using WebApplication_Hierarchical_Directory_System.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<DirectoryContext>(options =>
 {
-    options.UseSqlServer("Data Source=FENRIR-PC\\SQLEXPRESS;Initial Catalog=DirectoryStructure;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False");
+    //options.UseSqlServer("Data Source=FENRIR-PC\\SQLEXPRESS;Initial Catalog=DirectoryStructure;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False");
+    options.UseSqlServer("Data Source=WINSRVR2019;Initial Catalog=DirectoryStructure;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;Command Timeout=0");
 });
 
 
@@ -16,8 +18,7 @@ var app = builder.Build();
 
 app.MapControllers();
 
-//app.MapControllerRoute(name: "root", pattern: "{controller=Home}/{action=Index}");
-//app.MapControllerRoute(name: "subFolder", pattern: "{controller=Home}/{action=GetContent}/{id}");
 
+app.UseStaticFiles();
 
 app.Run();

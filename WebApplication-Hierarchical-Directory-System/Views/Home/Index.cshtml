@@ -32,8 +32,16 @@
             <button type="submit">Go Back</button>
         </form>
     </div>
+
+    <form method="post" enctype="multipart/form-data" action="/loadDirectoryTree">
+        File:
+        <INPUT id="file" type="file" name="file">
+		
+		<button type="submit" class="btn btn-success">Load</button>
+	</form>
     <div>
-        <a href="/saveToFile">save json</a>
+        @* <a href="/saveToFile">save json</a> *@
+        @* <a href="/loadFile">load json</a> *@
     </div>
 
 </body>

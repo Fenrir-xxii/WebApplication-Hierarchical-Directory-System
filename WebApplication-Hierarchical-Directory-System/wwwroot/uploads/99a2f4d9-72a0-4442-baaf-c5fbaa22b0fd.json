@@ -1,0 +1,104 @@
+[
+  {
+    "$id": "1",
+    "Id": 1,
+    "Title": "Creating Digital Images",
+    "Parent": null,
+    "ParentId": null,
+    "Childrens": [
+      {
+        "$id": "2",
+        "Id": 2,
+        "Title": "Resources",
+        "Parent": {
+          "$ref": "1"
+        },
+        "ParentId": 1,
+        "Childrens": [
+          {
+            "$id": "3",
+            "Id": 5,
+            "Title": "Primary Sources",
+            "Parent": {
+              "$ref": "2"
+            },
+            "ParentId": 2,
+            "Childrens": []
+          },
+          {
+            "$id": "4",
+            "Id": 6,
+            "Title": "Secondary Sources",
+            "Parent": {
+              "$ref": "2"
+            },
+            "ParentId": 2,
+            "Childrens": []
+          }
+        ]
+      },
+      {
+        "$id": "5",
+        "Id": 3,
+        "Title": "Evidence",
+        "Parent": {
+          "$ref": "1"
+        },
+        "ParentId": 1,
+        "Childrens": []
+      },
+      {
+        "$id": "6",
+        "Id": 4,
+        "Title": "Graphic Products",
+        "Parent": {
+          "$ref": "1"
+        },
+        "ParentId": 1,
+        "Childrens": [
+          {
+            "$id": "7",
+            "Id": 7,
+            "Title": "Process",
+            "Parent": {
+              "$ref": "6"
+            },
+            "ParentId": 4,
+            "Childrens": []
+          },
+          {
+            "$id": "8",
+            "Id": 8,
+            "Title": "Final Product",
+            "Parent": {
+              "$ref": "6"
+            },
+            "ParentId": 4,
+            "Childrens": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "$ref": "2"
+  },
+  {
+    "$ref": "5"
+  },
+  {
+    "$ref": "6"
+  },
+  {
+    "$ref": "3"
+  },
+  {
+    "$ref": "4"
+  },
+  {
+    "$ref": "7"
+  },
+  {
+    "$ref": "8"
+  }
+]
